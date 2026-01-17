@@ -1,5 +1,7 @@
 package com.mycompany;
 
+import java.util.Date;
+
 public class Response {
 
     private String message;
@@ -7,7 +9,7 @@ public class Response {
 
 
     public Response(String message) {
-        super();
+        this.time = new Date ().toString();
         this.message = message;
     }
 
